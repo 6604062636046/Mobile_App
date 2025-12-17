@@ -47,19 +47,23 @@ class MyApp extends StatelessWidget {
           children: [
             Text('Hello CS MB Test'),
             Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
                 Icon(Icons.ev_station),
                 Text('EV Station'),
               ],
             ),
-            Text('kmutnb'),
+            //Text('kmutnb'),
+
             Image.network(
                 'https://ichef.bbci.co.uk/news/800/cpsprodpb/F1F2/production/_118283916_b19c5a1f-162b-410b-8169-f58f0d153752.jpg.webp',
                 height: 180),
+
             Image.asset(
               'assets/images/1.jpg',
               width: 120,
             ),
+
             ElevatedButton(
               onPressed: () {
                 debugPrint("btn pressed");
