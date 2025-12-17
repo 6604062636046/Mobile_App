@@ -25,20 +25,19 @@ class MyApp extends StatelessWidget {
           actions: [
             IconButton(
               icon: const Icon(Icons.shopping_cart),
-              onPressed: (){
+              onPressed: () {
                 debugPrint('icon2 pressed');
               },
             ),
             IconButton(
-              icon: const Icon(Icons.info),
-              onPressed: (){
-                debugPrint('icon3 pressed');
-              }
-            )
+                icon: const Icon(Icons.info),
+                onPressed: () {
+                  debugPrint('icon3 pressed');
+                })
           ],
           leading: IconButton(
             icon: const Icon(Icons.menu),
-            onPressed: (){
+            onPressed: () {
               debugPrint('leading icon pressed');
             },
           ),
@@ -47,9 +46,20 @@ class MyApp extends StatelessWidget {
             child: Column(
           children: [
             Text('Hello CS MB Test'),
+            Row(
+              children: [
+                Icon(Icons.ev_station),
+                Text('EV Station'),
+              ],
+            ),
             Text('kmutnb'),
-            Image.network('https://ichef.bbci.co.uk/news/800/cpsprodpb/F1F2/production/_118283916_b19c5a1f-162b-410b-8169-f58f0d153752.jpg.webp',
-            height:180),
+            Image.network(
+                'https://ichef.bbci.co.uk/news/800/cpsprodpb/F1F2/production/_118283916_b19c5a1f-162b-410b-8169-f58f0d153752.jpg.webp',
+                height: 180),
+            Image.asset(
+              'assets/images/1.jpg',
+              width: 120,
+            ),
             ElevatedButton(
               onPressed: () {
                 debugPrint("btn pressed");
