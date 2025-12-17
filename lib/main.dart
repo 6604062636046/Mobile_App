@@ -48,6 +48,8 @@ class MyApp extends StatelessWidget {
           children: [
             Text('Hello CS MB Test'),
             Text('kmutnb'),
+            Image.network('https://ichef.bbci.co.uk/news/800/cpsprodpb/F1F2/production/_118283916_b19c5a1f-162b-410b-8169-f58f0d153752.jpg.webp',
+            height:180),
             ElevatedButton(
               onPressed: () {
                 debugPrint("btn pressed");
