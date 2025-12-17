@@ -22,16 +22,22 @@ class MyApp extends StatelessWidget {
         appBar: AppBar(
           title: Text('MyApp'),
         ),
-        body: Column(
+        body: Center(
+            child: Column(
           children: [
-            Text(
-              'Hello CS MB Test',
-              style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
-            ),
+            Text('Hello CS MB Test'),
             Text('kmutnb'),
-            Text('BKK TH'),
+            ElevatedButton(
+              onPressed: () {
+                debugPrint("btn pressed");
+              },
+              child: Text(
+                'OK button',
+                style: TextStyle(fontSize: 24),
+              ),
+            ),
           ],
-        ),
+        )),
       ),
     );
   }
