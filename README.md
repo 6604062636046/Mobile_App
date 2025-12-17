@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 # MobileAppDev
+=======
+# Mobile_App
+>>>>>>> 4f85f6a6d56ed69d1188e6dc0cdf9bb96d8928a5
 
 A new Flutter project.
 
